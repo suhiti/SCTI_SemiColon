@@ -1,0 +1,162 @@
+/* ===== 홈 화면 ===== */
+.home-page {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.home-main {
+    text-align: center;
+}
+
+.home-logo {
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 1;
+    color: #8e5ea2;
+    margin-bottom: 20px;
+}
+
+.home-title {
+    font-size: 52px;
+    font-weight: bold;
+    color: #2d3748;
+    margin: 0 0 14px;
+}
+
+.home-subtitle {
+    font-size: 18px;
+    color: #2d3748;
+    margin: 0 0 40px;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #919191;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-area {
+    justify-content: center;
+    display: flex;
+    margin: 40px 0;
+}
+
+
+/* ===== 결과 화면 ===== */
+.result-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f4f6f9;
+}
+
+.result-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,1);
+}
+
+.result-box h1 {
+    color: #333;
+}
+
+.teacher-name {
+    color: #2b6cb0;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.result-box .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3182ce;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.test1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2d3748;
+    margin: 5px 30px 14px;
+}
+
+.test-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #2d3748;
+    margin: 0 0 14px;
+}
+
+.scale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin: 0 300px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #cbd5e0;
+}
+
+.scale-label {
+    font-size: 16px;
+    color: #2d3748;
+    white-space: nowrap;
+}
+
+.choice {
+    display: inline-block;
+    margin: 0;
+}
+
+.choice input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    border: 3px solid #919191;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.choice input:hover {
+    transform: scale(1.1);
+}
+
+/* 그렇다 쪽 (3, 4) → 하늘색 */
+.choice input[value="3"]:checked,
+.choice input[value="4"]:checked {
+    background-color: #63b3ed;
+    border-color: #63b3ed;
+    transform: scale(1.05);
+}
+
+/* 그렇지 않다 쪽 (1, 2) → 보라색 */
+.choice input[value="1"]:checked,
+.choice input[value="2"]:checked {
+    background-color: #8e5ea2;
+    border-color: #8e5ea2;
+    transform: scale(1.05);
+}

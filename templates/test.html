@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <title>SemiColon-Type-Indicator</title>
+
+</head>
+<body>
+
+    <br>
+    <br>
+    <br>
+
+    <h1 class="test-title" style="text-align: center;">SemiColon-Type-Indicator</h1>
+
+    <form action="/result" method="POST">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 class="test1">나는 처음 보는 음식이 있다면 한 번쯤 먹어보는 편이다.</h2>
+
+
+<br>
+
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q1" value="1" required></label>
+    <label class="choice"><input type="radio" name="q1" value="2" required></label>
+    <label class="choice"><input type="radio" name="q1" value="3" required></label>
+    <label class="choice"><input type="radio" name="q1" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 해야 할 일이 생기면 미루고 있기보다 빨리 끝내는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q2" value="1" required></label>
+    <label class="choice"><input type="radio" name="q2" value="2" required></label>
+    <label class="choice"><input type="radio" name="q2" value="3" required></label>
+    <label class="choice"><input type="radio" name="q2" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 여러 사람이 모인 자리에서 자연스럽게 대화에 참여하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q3" value="1" required></label>
+    <label class="choice"><input type="radio" name="q3" value="2" required></label>
+    <label class="choice"><input type="radio" name="q3" value="3" required></label>
+    <label class="choice"><input type="radio" name="q3" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 어떤 이야기를 들으면 그 일이 앞으로 어떻게 될지 상상해보는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q4" value="1" required></label>
+    <label class="choice"><input type="radio" name="q4" value="2" required></label>
+    <label class="choice"><input type="radio" name="q4" value="3" required></label>
+    <label class="choice"><input type="radio" name="q4" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 친구가 고민을 이야기하면 해결 방법보다 그 친구의 기분을 먼저 생각하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q5" value="1" required></label>
+    <label class="choice"><input type="radio" name="q5" value="2" required></label>
+    <label class="choice"><input type="radio" name="q5" value="3" required></label>
+    <label class="choice"><input type="radio" name="q5" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 여행을 갈 때 세부적인 일정까지 미리 정해두는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q6" value="1" required></label>
+    <label class="choice"><input type="radio" name="q6" value="2" required></label>
+    <label class="choice"><input type="radio" name="q6" value="3" required></label>
+    <label class="choice"><input type="radio" name="q6" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 익숙한 방법이 있더라도 더 재미있어 보이는 새로운 방법을 시도하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q7" value="1" required></label>
+    <label class="choice"><input type="radio" name="q7" value="2" required></label>
+    <label class="choice"><input type="radio" name="q7" value="3" required></label>
+    <label class="choice"><input type="radio" name="q7" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 혼자 카페에 가거나 혼자 시간을 보내는 것도 편하게 느껴진다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q8" value="1" required></label>
+    <label class="choice"><input type="radio" name="q8" value="2" required></label>
+    <label class="choice"><input type="radio" name="q8" value="3" required></label>
+    <label class="choice"><input type="radio" name="q8" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 다른 사람이 설명한 내용에서 구체적인 사실이나 세부적인 부분을 잘 기억하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q9" value="1" required></label>
+    <label class="choice"><input type="radio" name="q9" value="2" required></label>
+    <label class="choice"><input type="radio" name="q9" value="3" required></label>
+    <label class="choice"><input type="radio" name="q9" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 친구와 의견이 달라도 내가 맞다고 생각하면 솔직하게 말하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q10" value="1" required></label>
+    <label class="choice"><input type="radio" name="q10" value="2" required></label>
+    <label class="choice"><input type="radio" name="q10" value="3" required></label>
+    <label class="choice"><input type="radio" name="q10" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 갑자기 계획에 없던 일이 생겨도 그때그때 맞춰서 행동하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q11" value="1" required></label>
+    <label class="choice"><input type="radio" name="q11" value="2" required></label>
+    <label class="choice"><input type="radio" name="q11" value="3" required></label>
+    <label class="choice"><input type="radio" name="q11" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 새로운 사람을 만났을 때 먼저 말을 걸기보다 상대방이 다가오기를 기다리는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q12" value="1" required></label>
+    <label class="choice"><input type="radio" name="q12" value="2" required></label>
+    <label class="choice"><input type="radio" name="q12" value="3" required></label>
+    <label class="choice"><input type="radio" name="q12" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 평범한 물건을 볼 때 원래 용도와 다르게 사용해보려고 생각해본 적이 많다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q13" value="1" required></label>
+    <label class="choice"><input type="radio" name="q13" value="2" required></label>
+    <label class="choice"><input type="radio" name="q13" value="3" required></label>
+    <label class="choice"><input type="radio" name="q13" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 누군가의 행동을 판단할 때 그 사람이 처한 상황이나 이유를 함께 생각하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q14" value="1" required></label>
+    <label class="choice"><input type="radio" name="q14" value="2" required></label>
+    <label class="choice"><input type="radio" name="q14" value="3" required></label>
+    <label class="choice"><input type="radio" name="q14" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 중요한 일을 앞두고 있으면 미리 준비를 끝내놓아야 마음이 편하다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q15" value="1" required></label>
+    <label class="choice"><input type="radio" name="q15" value="2" required></label>
+    <label class="choice"><input type="radio" name="q15" value="3" required></label>
+    <label class="choice"><input type="radio" name="q15" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 여러 사람과 함께 무언가를 할 때 혼자 하기보다 다른 사람과 의견을 주고받으며 하는 것이 더 즐겁다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q16" value="1" required></label>
+    <label class="choice"><input type="radio" name="q16" value="2" required></label>
+    <label class="choice"><input type="radio" name="q16" value="3" required></label>
+    <label class="choice"><input type="radio" name="q16" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 설명을 들을 때 구체적인 사례보다 전체적인 원리나 의미가 궁금한 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q17" value="1" required></label>
+    <label class="choice"><input type="radio" name="q17" value="2" required></label>
+    <label class="choice"><input type="radio" name="q17" value="3" required></label>
+    <label class="choice"><input type="radio" name="q17" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 결정을 내일 때 다른 사람의 기분보다 무엇이 더 합리적인지를 먼저 생각하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q18" value="1" required></label>
+    <label class="choice"><input type="radio" name="q18" value="2" required></label>
+    <label class="choice"><input type="radio" name="q18" value="3" required></label>
+    <label class="choice"><input type="radio" name="q18" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 계획했던 일이 갑자기 바뀌어도 크게 스트레스를 받지 않는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q19" value="1" required></label>
+    <label class="choice"><input type="radio" name="q19" value="2" required></label>
+    <label class="choice"><input type="radio" name="q19" value="3" required></label>
+    <label class="choice"><input type="radio" name="q19" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 하루 동안 사람들과 계속 어울린 날에는 혼자 조용히 쉬는 시간이 필요하다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q20" value="1" required></label>
+    <label class="choice"><input type="radio" name="q20" value="2" required></label>
+    <label class="choice"><input type="radio" name="q20" value="3" required></label>
+    <label class="choice"><input type="radio" name="q20" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 새로운 것을 배울 때 직접 해보면서 익히는 것보다 먼저 정확한 방법을 알아두는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q21" value="1" required></label>
+    <label class="choice"><input type="radio" name="q21" value="2" required></label>
+    <label class="choice"><input type="radio" name="q21" value="3" required></label>
+    <label class="choice"><input type="radio" name="q21" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 친구나 가족에게 받은 작은 친절이나 따뜻한 말을 오래 기억하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q22" value="1" required></label>
+    <label class="choice"><input type="radio" name="q22" value="2" required></label>
+    <label class="choice"><input type="radio" name="q22" value="3" required></label>
+    <label class="choice"><input type="radio" name="q22" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 해야 할 일을 목록으로 정리해두면 마음이 편하고 실제로 그렇게 처리하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q23" value="1" required></label>
+    <label class="choice"><input type="radio" name="q23" value="2" required></label>
+    <label class="choice"><input type="radio" name="q23" value="3" required></label>
+    <label class="choice"><input type="radio" name="q23" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 누군가와 대화하다가도 그 사람이 말한 내용에서 새로운 아이디어를 떠올리는 경우가 많다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q24" value="1" required></label>
+    <label class="choice"><input type="radio" name="q24" value="2" required></label>
+    <label class="choice"><input type="radio" name="q24" value="3" required></label>
+    <label class="choice"><input type="radio" name="q24" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<h2 class="test1">나는 문제가 생겼을 때 다른 사람에게 도움을 요청하기 전에 혼자 해결해보려고 하는 편이다.</h2>
+
+<br>
+
+<div class="scale">
+    <span class="scale-label">매우 그렇지 않다</span>
+    <label class="choice"><input type="radio" name="q25" value="1" required></label>
+    <label class="choice"><input type="radio" name="q25" value="2" required></label>
+    <label class="choice"><input type="radio" name="q25" value="3" required></label>
+    <label class="choice"><input type="radio" name="q25" value="4" required></label>
+    <span class="scale-label">매우 그렇다</span>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="submit-area">
+    <button type="submit" class="start-button">
+        결과 보기 →
+    </button>
+</div>
+
+</form>
+
+
+</body>
+</html>

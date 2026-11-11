@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>검사 결과</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="result-page">
+
+    <div class="result-box">
+        <h1> 검사 결과 </h1>
+        <p>당신과 가장 성향이 비슷한 선생님은?</p>
+        
+        <!-- Python에서 넘겨받은 teacher 변수 출력 -->
+        <div class="teacher-name">
+            [{{ teacher }}] 선생님
+        </div>
+
+        <a href="/" class="btn">처음으로 돌아가기</a>
+    </div>
+
+</body>
+</html>
