@@ -159,3 +159,60 @@
     text-align: center;
     word-break: keep-all;
 }
+
+
+/* ===== 모바일 화면 최적화 (가로 768px 이하일 때 자동 적용) ===== */
+@media (max-width: 768px) {
+    /* 1. 홈 화면 크기 조절 */
+    .home-main {
+        padding: 0 20px;
+    }
+    .home-logo {
+        font-size: 64px;
+    }
+    .home-title {
+        font-size: 32px;
+        word-break: keep-all;
+    }
+    .home-subtitle {
+        font-size: 16px;
+        word-break: keep-all;
+    }
+
+    /* 2. 테스트 화면 질문 & 선택지 정렬 해결 (핵심!) */
+    .test-title {
+        font-size: 32px;
+        padding: 0 16px;
+    }
+    .test1 {
+        font-size: 18px;
+        margin: 5px 16px 20px;
+        word-break: keep-all;
+    }
+    .scale {
+        margin: 0 16px; /* 기존 300px 고정 여백을 16px로 축소 */
+        gap: 10px;      /* 버튼 사이 간격 축소 */
+        padding-bottom: 50px;
+    }
+    .scale-label {
+        font-size: 12px; /* '그렇다 / 그렇지 않다' 글씨 축소 */
+    }
+    .choice input {
+        width: 38px;     /* 동그라미 버튼 크기 축소 */
+        height: 38px;
+        border-width: 2px;
+    }
+
+    /* 3. 결과 화면 크기 조절 */
+    .result-page {
+        padding: 40px 16px;
+    }
+    .result-teacher {
+        font-size: 36px;
+        word-break: keep-all;
+    }
+    .teacher-desc {
+        padding: 24px 20px;
+        font-size: 16px;
+    }
+}
