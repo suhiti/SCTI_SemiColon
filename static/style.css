@@ -83,6 +83,17 @@
     font-size: 16px;
     color: #2d3748;
     white-space: nowrap;
+    width: 100px; /* 양쪽 글자 영역의 너비를 똑같이 고정 */
+}
+
+/* 왼쪽 글자('그렇지 않다')는 동그라미 쪽(오른쪽)으로 붙임 */
+.scale-label:first-child {
+    text-align: right;
+}
+
+/* 오른쪽 글자('그렇다')는 동그라미 쪽(왼쪽)으로 붙임 */
+.scale-label:last-child {
+    text-align: left;
 }
 
 .choice {
@@ -195,7 +206,8 @@
         padding-bottom: 50px;
     }
     .scale-label {
-        font-size: 12px; /* '그렇다 / 그렇지 않다' 글씨 축소 */
+        font-size: 12px;
+        width: 65px; /* 모바일에서도 양쪽 글자 너비를 똑같이 고정 */
     }
     .choice input {
         width: 38px;     /* 동그라미 버튼 크기 축소 */
