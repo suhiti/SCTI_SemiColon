@@ -82,8 +82,7 @@
 .scale-label {
     font-size: 16px;
     color: #2d3748;
-    white-space: nowrap;
-    width: 100px; /* 양쪽 글자 영역의 너비를 똑같이 고정 */
+    flex: 1; /* 양쪽 글자가 남은 공간을 1:1로 똑같이 나눠 가져 동그라미가 정중앙에 위치함 */
 }
 
 /* 왼쪽 글자('그렇지 않다')는 동그라미 쪽(오른쪽)으로 붙임 */
@@ -201,17 +200,17 @@
         word-break: keep-all;
     }
     .scale {
-        margin: 0 16px; /* 기존 300px 고정 여백을 16px로 축소 */
-        gap: 10px;      /* 버튼 사이 간격 축소 */
+        margin: 0 12px;
+        gap: 8px;
         padding-bottom: 50px;
     }
     .scale-label {
         font-size: 12px;
-        width: 65px; /* 모바일에서도 양쪽 글자 너비를 똑같이 고정 */
+        word-break: keep-all; /* '그렇지 / 않다'처럼 어색하게 글자가 쪼개지는 것 방지 */
     }
     .choice input {
-        width: 38px;     /* 동그라미 버튼 크기 축소 */
-        height: 38px;
+        width: 34px;
+        height: 34px;
         border-width: 2px;
     }
 
