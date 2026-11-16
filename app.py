@@ -35,8 +35,12 @@ def test():
     return render_template("test.html")
     
 
-@app.route("/result", methods=["POST"])
+@app.route("/result", methods=["GET", "POST"])
 def result():
+    # GET 방식(새로고침, 주소 직접 입력 등)으로 들어오면 첫 화면으로 이동
+    if request.method == "GET":
+        return redirect(url_for("home"))
+
     teachers = load_teachers()
     
     # HTML에서 제출한 답변 25개 수집
@@ -55,11 +59,8 @@ def result():
 
     return render_template("result.html", teacher=best_teacher, score=best_score, description=description)
 
-@app.route('/result', methods=['GET', 'POST'])
-def result():
-    if request.method == 'GET':
-        return redirect(url_for('home')) # 누가 주소로 바로 들어오거나 새로고침하면 첫 화면으로 자연스럽게 이동
-
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
+    
