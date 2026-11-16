@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -33,6 +33,7 @@ def home():
 @app.route("/test")
 def test():
     return render_template("test.html")
+    
 
 @app.route("/result", methods=["POST"])
 def result():
@@ -53,6 +54,11 @@ def result():
     description = DESCRIPTIONS.get(best_teacher, "아직 설명이 준비되지 않았어요.")
 
     return render_template("result.html", teacher=best_teacher, score=best_score, description=description)
+
+@app.route('/result', methods=['GET', 'POST'])
+def result():
+    if request.method == 'GET':
+        return redirect(url_for('home')) # 누가 주소로 바로 들어오거나 새로고침하면 첫 화면으로 자연스럽게 이동
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
